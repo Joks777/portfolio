@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Couleurs et police : modifie-les ici */
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-bg: #0b1020;
+  --color-surface: #131a2e;
+  --color-fg: #eef1f8;
+  --color-muted: #94a0bb;
+  --color-line: #232c45;
+  --color-accent: #4f8cff;
+  --color-accent2: #8b5cf6;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-bg font-sans text-fg antialiased; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-bold transition; }
+.btn-primary { background: linear-gradient(110deg, var(--color-accent), var(--color-accent2)); color: #fff; }
+.btn-primary:hover { filter: brightness(1.1); transform: translateY(-2px); }
+.btn-ghost { @apply border border-line hover:border-accent; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
