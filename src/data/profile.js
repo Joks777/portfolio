@@ -5,7 +5,7 @@ export const profile = {
   name: 'Lionel BIAOU',
   role: 'Développeur Web & Mobile',
   intro: "Je conçois des applications complètes, de l'idée à la mise en ligne, avec une conception solide avant d'écrire la moindre ligne de code.",
-  photo: '/moi.png', // ex. '/moi.jpg' (mets l'image dans le dossier public/)
+  photo: 'src/data/public/moi.png', // ex. '/moi.jpg' (mets l'image dans le dossier public/)
   cv: '/CV professionnel gris simple.pdf', // ex. '/cv.pdf' (mets le fichier dans le dossier public/)
   email: 'lionelbiaou17@gmail.com',
   phone: '+229 0196543663',
